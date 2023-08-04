@@ -10,6 +10,8 @@
 
 ## 使用效果
 
+__注意：以下消息已经过时，因为官池将算法由MD5改为了SHA-512__   
+   
 在使用骁龙870的Ubuntu 22.04 LTS proot容器内运行单次挖矿速度可提升至9秒/次，最高可提升至6秒/次。    
     
 ![Screenshot_2023-08-04-13-29-07-870_com.termux.jpg](https://s2.loli.net/2023/08/04/dmzXaI6HDl43N1s.jpg)
