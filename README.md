@@ -10,6 +10,6 @@
 
 ## 使用效果
 
-在使用骁龙870的Ubuntu 22.04 LTS proot容器内运行单次挖矿速度可提升至10秒以下。    
+在使用骁龙870的Ubuntu 22.04 LTS proot容器内运行单次挖矿速度可提升至9秒/次。    
     
 ![Screenshot_2023-08-04-13-29-07-870_com.termux.jpg](https://s2.loli.net/2023/08/04/dmzXaI6HDl43N1s.jpg)
