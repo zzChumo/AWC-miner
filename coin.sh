@@ -14,6 +14,10 @@ ID=$(cat c.json | jq .id -r)
 #hashcat -a 3 -m 1710 "$HASH:$SALT" "?d?d?d?d?d?d?d?d" --increment --increment-min 1 --increment-max 9 -O -o t.txt --outfile-format=2 > /dev/null
 hashcat -a 3 -m 1710 "$HASH:$SALT" "?d?d?d?d?d?d?d?d" -O -o t.txt --outfile-format=2 > /dev/null
 ANS=$(cat t.txt)
+if ! [ -e stop ]
+then
+./coin.sh &
+fi
 curl -sd "id=$ID&answer=$ANS" https://coin.awa.ac.cn/api/v1/mine/finish > e.json
 BALANCE=$(cat e.json | jq .balance -r)
 echo Balance: $BALANCE
